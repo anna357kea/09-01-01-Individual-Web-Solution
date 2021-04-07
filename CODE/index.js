@@ -28,6 +28,9 @@ function showPosts(posts) {
         //adjusting template
         template.querySelector("h3").textContent = post.title;
         template.querySelector("h4 span").textContent = post.username;
+        template.querySelector(
+            "a.readmore"
+        ).href = `article.html?articleId=${post._id}`;
         //appending it, putting it somewhere on the site (in <main>)
         document.querySelector("main").appendChild(copy);
     });
