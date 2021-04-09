@@ -46,4 +46,12 @@ function showPost(data) {
         //appending it, putting it somewhere on the site (in <main>)
         document.querySelector("main").appendChild(copy);
     });
+    if (data.comments.length == 0) {
+        const copy = comment_template.cloneNode(true);
+        copy.querySelector("div h5.comment_date").textContent = "No date";
+        copy.querySelector("div h4.comment_username").textContent = "No name";
+        copy.querySelector("div h4.comment_content").textContent =
+            "No comments yet, be the first one!";
+        document.querySelector("main").appendChild(copy);
+    }
 }
