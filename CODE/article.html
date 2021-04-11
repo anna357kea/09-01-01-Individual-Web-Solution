@@ -21,7 +21,21 @@
                 <h4 class="comment_content">CONTENT</h4>
             </div>
         </template>
-    <main></main>
+    <main>
+        <div id="form_container">
+            <form autocomplete="on" method='POST' data-netlify="true">
+                <label for="form-comment_username">Username</label>
+                <input id="form-comment_username" type="text" name="form-comment_username" placeholder="Your username" required /> 
+    
+                <label for="form-comment_content">Content</label>
+                <input id="form-comment_content" type="text" name="comment_content" placeholder="Content of your comment" required /> 
+                <button>Send comment</button>
+            </form>
+
+    </main>
+
+
+
     <script src="article.js"></script>
     </body>
 </html>
