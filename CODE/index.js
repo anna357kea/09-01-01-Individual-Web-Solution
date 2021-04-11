@@ -18,11 +18,11 @@ function getdata() {
 getdata();
 
 function showPosts(posts) {
-    console.log(posts);
     //grab the template
     const template = document.querySelector("template.frontpageList").content;
 
     posts.forEach((post) => {
+        console.log(post);
         //clone the template
         const copy = template.cloneNode(true);
         //adjusting template

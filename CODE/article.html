@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="vieport" content="width=device-width, initial-scale=1.0" />
-        <title>Website with posts and comments</title>
+        <title>Articles descritpion</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header><a class="homebutton" href="index.html">Home</a></header>
@@ -23,12 +24,12 @@
         </template>
     <main>
         <div id="form_container">
-            <form autocomplete="on" method='POST' data-netlify="true">
-                <label for="form-comment_username">Username</label>
-                <input id="form-comment_username" type="text" name="form-comment_username" placeholder="Your username" required /> 
+            <form id="commentForm" autocomplete="on" method='POST' data-netlify="true">
+                <label for="form_comment_username">Your username</label>
+                <input id="form_comment_username" type="text" name="form_comment_username" placeholder="How can we call you" required /> 
     
-                <label for="form-comment_content">Content</label>
-                <input id="form-comment_content" type="text" name="comment_content" placeholder="Content of your comment" required /> 
+                <label for="form_comment_content">Your comment</label>
+                <input id="form_comment_content" type="text" name="comment_content" placeholder="Content of our comment" required /> 
                 <button>Send comment</button>
             </form>
 
